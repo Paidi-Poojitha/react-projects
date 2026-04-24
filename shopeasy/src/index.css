@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+:root{
+  --primary:#1F4D3A;
+  --secondary:#6B8F71;
+  --accent:#D4A373;
+  --bg:#FAF7F2;
+  --white:#FFFFFF;
+  --text:#1E1E1E;
+  --muted:#6B7280;
+  --border:#E7E0D6;
+}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:"Poppins",sans-serif;
+}
+
+.ecom-track{
+  width:max-content;
+  animation:scrollInfinite 35s linear infinite;
+}
+
+.ecom-track:hover{
+  animation-play-state: paused;
+}
+
+@keyframes scrollInfinite{
+  from{
+    transform:translateX(0);
+  }
+  to{
+    transform:translateX(-50%);
+  }
+}

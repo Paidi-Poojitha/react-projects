@@ -1,0 +1,63 @@
+/* FORM CARD */
+.add-user-form {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  padding: 28px;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  box-shadow: 0 20px 40px rgba(111, 66, 193, 0.12);
+}
+
+/* INPUTS */
+.add-user-form input {
+  padding: 12px 14px;
+  border: 1px solid #dbe4ff;
+  border-radius: 12px;
+  outline: none;
+
+  font-size: 0.95rem;
+  transition: 0.2s ease;
+}
+
+.add-user-form input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.08);
+}
+
+/* BUTTONS */
+.add-user-form button {
+  border: none;
+  padding: 12px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+/* PRIMARY BUTTON */
+.add-user-form button[type="submit"] {
+  background: linear-gradient(135deg, #6f42c1, #007bff);
+  color: #fff;
+}
+
+/* CANCEL BUTTON */
+.add-user-form button[type="button"] {
+  background: #f1f5ff;
+  color: #17a2b8;
+}
+
+.add-user-form button:hover {
+  transform: translateY(-2px);
+}
+
+/* MOBILE */
+@media (max-width: 500px) {
+  .add-user-form {
+    padding: 22px 18px;
+  }
+}
